@@ -1,0 +1,21 @@
+/* 初期状態では非表示にする */
+.hidden {
+    opacity: 0;
+  }
+  
+  /* アニメーションが適用されるとフェードイン・ズームイン */
+  .anim-box.zoomin.is-animated {
+    animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+  
+  /* ズームインとフェードインのアニメーション */
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

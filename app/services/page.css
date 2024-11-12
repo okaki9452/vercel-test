@@ -1,0 +1,21 @@
+.box30 {
+    margin: 2em 0;
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    padding-left: 5rem /* 80px */;
+    padding-right: 5rem /* 80px */;
+}
+.box30 .box-title {
+    font-size: 1.2em;
+    background: #5fc2f5;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding-left: 5rem /* 80px */;
+    padding-right: 5rem /* 80px */;
+}
+.box30 p {
+    padding: 15px 20px;
+    margin: 0;
+}
