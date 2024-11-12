@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-      <header className="relative w-full h-11/12 sm:h-72 md:h-80 lg:h-96"> {/* 高さをレスポンシブに調整 */}
+      <header className="relative w-full h-3/5 sm:h-72 md:h-80 lg:h-96"> {/* 高さをレスポンシブに調整 */}
         <div className="absolute mx-4 my-2 inset-0 rounded-2xl bg-cover bg-center" style={{ backgroundImage: 'url(/images/header_bg.jpg)' }}></div>
         <div className="relative px-4 py-36 z-10 flex flex-col gap-3 items-center justify-center h-full text-white">
           {/* タイトルのフォントサイズをレスポンシブに調整 */}
