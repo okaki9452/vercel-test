@@ -17,7 +17,7 @@ export default function About() {
   }, []);
 
   return (
-    <div>
+    <div className="h-screen flex flex-col" >
       <Header />
       <div
         className={`gap-10 flex flex-col items-center transition-opacity duration-1000 ${
@@ -44,7 +44,10 @@ export default function About() {
         <h3 className="text-3xl font-thin mb-4">Instagram</h3>
       </div>
 
-      <Footer />
+      <div className="mt-auto">
+        <Footer />
+      </div>
+      
     </div>
   );
 }

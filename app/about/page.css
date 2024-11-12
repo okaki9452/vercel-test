@@ -2,22 +2,36 @@ ul,ol {
   padding: 0;
 }
 
+/* アニメーションの定義 */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); /* 画面外から右側に開始 */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* 元の位置に移動 */
+    opacity: 1;
+  }
+}
+
+/* my-classの基本スタイル */
 .my-class {
   position: relative;
-  list-style-type: none !important; /*ポチ消す*/
-  padding: 1.5em 1.5em 1.5em 1.5em;
+  list-style-type: none !important;
+  padding: 1.5em;
   margin-bottom: 5px;
   line-height: 1.5;
   background: #dbebf8;
   vertical-align: middle;
   color: #505050;
-  border-radius: 15px 0px 0px 15px; /*左側の角丸く*/
+  border-radius: 15px 0px 0px 15px;
+  animation: slideInFromRight 2s ease-out forwards; /* アニメーションの適用 */
 }
 
+/* :beforeのスタイル */
 .my-class:before {
   display: inline-block;
   vertical-align: middle;
-  /*以下白丸つくる*/
   content: "";
   width: 1em;
   height: 1em;

@@ -17,13 +17,13 @@
     animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 
-  .inn-pc {
+  .inn-sp {
     position: relative;
     z-index: 1;
-    color: white;
-    font-size: 50px;
+    color: red;
+    font-size: 28px;
     font-weight: bold;
-    padding: 5px 15px;
+    padding: 2px 13px;
   }
   
   @keyframes bg {
@@ -37,11 +37,3 @@
     }
   }
   
-  .hover-text {
-    font-size: 2.25rem; /* 通常のサイズ */
-    transition: font-size 3s ease; /* アニメーション */
-  }
-  
-  .hover-text:hover {
-    font-size: 2.5rem; 
-  }

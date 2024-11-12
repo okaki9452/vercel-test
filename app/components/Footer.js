@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-gray-800 text-white py-4">
       <div className="text-center">
-        <nav className="flex justify-center space-x-16">
+        <nav className="flex justify-center space-x-10">
           
           <Link href="/">
             <p className="hover:text-gray-400">Top</p>
@@ -19,7 +19,7 @@ export default function Footer() {
           </Link>
 
           <Link href="/contact">
-            <p className="hover:text-gray-400">Contact</p>
+            <p className=" hover:text-gray-400">Contact</p>
           </Link>
 
         </nav>

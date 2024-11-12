@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import './BackgroundAnimation.css'; // 新しいCSSをインポート
+import './BackgroundStatic.css'; // 新しいCSSをインポート
 import Link from 'next/link';
 
-export default function BackgroundAnimation(props) { // propsはurlとcontentとtime
+export default function BackgroundStatic(props) { // propsはurlとcontentとtime
   const [isAnimated, setIsAnimated] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimated(true);
-    }, props.time); // props.timeで時間を制御
+    }, props.time); // props.time後に表示
 
     return () => clearTimeout(timer); // クリーンアップ(DOMがアンマウントされたタイミング)でタイマーをクリア
   }, [props.time]); // props.timeが変更されたら再度動作
@@ -19,7 +19,7 @@ export default function BackgroundAnimation(props) { // propsはurlとcontentと
     <div className={`bg ${isAnimated ? 'is-animated' : ''}`}>
       <div className="bg-wrap">
         <Link href={props.url}>
-          <p className="inn-pc hover-text hover:text-gray-400 duration-500">{props.content}</p>
+          <p className="inn-sp hover:text-gray-400 duration-500">{props.content}</p>
         </Link>
       </div>
     </div>
