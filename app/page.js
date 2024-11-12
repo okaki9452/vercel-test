@@ -65,7 +65,7 @@ export default function Home() {
         <h1 className="fixed text-5xl bottom-52 md:text-7xl md:bottom-80 xl:text-7xl xl:bottom-40 2xl:text-8xl 2xl:bottom-64 font-bold left-3 text-lime-800">FANTASY LIFE</h1> {/* MyPCはxl-2xlサイズ */}
         <h1 className="fixed text-2xl bottom-44 md:text-4xl md:bottom-64 xl:text-4xl xl:bottom-28 2xl:text-6xl 2xl:bottom-48 font-semibold left-4 text-lime-800">EXPOLORE SOMETHING NEW</h1>
         <h1 className="fixed text-xs bottom-40 md:text-base md:bottom-56 xl:text-sm xl:bottom-20 xl:mb-1 2xl:text-base 2xl:bottom-40 left-4 text-lime-900">You have to trip somewhere and go finding something interesting</h1>
-        <h1 className="fixed text-xs bottom-36 md:text-base md:bottom-52 xl:text-sm xl:bottom-16 2xl:text-base 2xl:bottom-32 2xl:mb-2 left-4 text-lime-900">"You must venture out and discover something exciting."</h1>
+        <h1 className="fixed text-xs bottom-36 md:text-base md:bottom-52 xl:text-sm xl:bottom-16 2xl:text-base 2xl:bottom-32 2xl:mb-2 left-4 text-lime-900">&quot;You must venture out and discover something exciting.&quot;</h1>
         <h2 className="fixed bottom-4 right-4 text-base text-white p-2 pacifico-regular"> {/* relativeだとダメ (理由)親要素の適切な大きさが設定されていないため */}
           © 2024 My Website. All rights reserved.
         </h2>
