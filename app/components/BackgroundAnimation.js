@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import './BackgroundAnimation.css'; // 新しいCSSをインポート
+import Link from 'next/link';
 
 export default function BackgroundAnimation(props) { // propsはurlとcontentとtime
   const [isAnimated, setIsAnimated] = useState(false);
@@ -17,7 +18,9 @@ export default function BackgroundAnimation(props) { // propsはurlとcontentと
   return (
     <div className={`bg ${isAnimated ? 'is-animated' : ''}`}>
       <div className="bg-wrap">
-        <a href={props.url} className="inn hover-text text-white hover:text-gray-400 duration-500">{props.content}</a>
+        <Link href={props.url}>
+          <p className="inn hover-text text-white hover:text-gray-400 duration-500">{props.content}</p>
+        </Link>
       </div>
     </div>
   );

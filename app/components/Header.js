@@ -1,4 +1,5 @@
 import "./Header.css";
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -11,16 +12,24 @@ export default function Header() {
           <nav> {/* <nav> タグは、意味論的なタグです。これにより、ナビゲーションメニュー(そのままの意味でとらえて)を明確にする役割を持っています。なくても機能的には問題ありませんが、使うことが推奨されます。 */}
             <ul className="flex space-x-20 poetsen-one-regular">
               <li>
-                <a href="/" className="text-white hover:text-gray-400 hover:transition-colors duration-1000">Top</a>
+                <Link href="/">
+                  <p className="text-white hover:text-gray-400 hover:transition-colors duration-1000">Top</p>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="text-white hover:text-gray-400 hover:transition-colors duration-1000">About</a>
+                <Link href="/about">
+                  <p className="text-white hover:text-gray-400 hover:transition-colors duration-1000">About</p>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="text-white hover:text-gray-400 hover:transition-colors duration-1000">Services</a>
+                <Link href="/services">
+                  <p className="text-white hover:text-gray-400 hover:transition-colors duration-1000">Services</p>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-white hover:text-gray-400 hover:transition-colors duration-1000">Contact</a>
+                <Link href="/contact">
+                  <p className="text-white hover:text-gray-400 hover:transition-colors duration-1000">Contact</p>
+                </Link>
               </li>
             </ul>
           </nav>

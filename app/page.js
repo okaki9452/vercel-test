@@ -11,7 +11,7 @@ export default function Home() {
     // すぐに要素を表示
     setTimeout(() => {
       setIsVisible(true);
-    }, 0);
+    }, 100);
   }, []);
 
   return (
@@ -28,10 +28,10 @@ export default function Home() {
       <div className="relative z-10">
         <h3 className="relative text-yellow-200 text-3xl p-4 flex items-center justify-center md:text-4xl lg:text-5xl pacifico-regular">Thank you for watching my HomePage</h3>
         <div className="pacifico-regular">
-          <BackgroundAnimation url="/" content="　Top　" time={50} />
-          <BackgroundAnimation url="/about" content="　About　" time={150} />
-          <BackgroundAnimation url="/services" content="　Service　　" time={250} />
-          <BackgroundAnimation url="/contact" content="　Contact　　　" time={600} />
+          <BackgroundAnimation url="/" content="　Top　" time={200} />
+          <BackgroundAnimation url="/about" content="　About　" time={300} />
+          <BackgroundAnimation url="/services" content="　Service　　" time={600} />
+          <BackgroundAnimation url="/contact" content="　Contact　　　" time={900} />
         </div>
         <h1 className="text-5xl sm:text-6xl font-bold fixed bottom-52 left-3 text-lime-800">FANTASY LIFE</h1>
         <h1 className="text-3xl sm:text-4xl font-semibold fixed bottom-40 left-4 text-lime-800">EXPOLORE SOMETHING NEW</h1>
