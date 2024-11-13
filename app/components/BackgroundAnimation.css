@@ -39,7 +39,7 @@
   
   .hover-text {
     font-size: 2.25rem; /* 通常のサイズ */
-    transition: font-size 3s ease; /* アニメーション */
+    transition: font-size 0.2s ease; /* アニメーション */
   }
   
   .hover-text:hover {
